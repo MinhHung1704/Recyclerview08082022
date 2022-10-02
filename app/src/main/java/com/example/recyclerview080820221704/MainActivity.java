@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
         foodAdapter = new FoodAdapter(foodList);
         recyclerViewFood.setAdapter(foodAdapter);
         recyclerViewFood.setHasFixedSize(true);
+
     }
 }

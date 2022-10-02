@@ -111,6 +111,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             if (!checkCurrentTimeOver(timeOpen, timeCurrent, timeClose)) {
                 tvCloseTime.setVisibility(View.GONE);
             } else {
+                String minutes = food.getMinuteOpenTime() < 10 ? "0" + food.getMinuteOpenTime() : food.getMinuteOpenTime() + "";
+                String hour = food.getHourOpenTime() < 10 ? "0" + food.getHourOpenTime() : food.getHourOpenTime() + "";
+                tvCloseTime.setText(String.format("Quán đã đóng cửa \n Sẽ mở vào lúc \n%s:%s", hour, minutes));
                 tvCloseTime.setVisibility(View.VISIBLE);
             }
         }

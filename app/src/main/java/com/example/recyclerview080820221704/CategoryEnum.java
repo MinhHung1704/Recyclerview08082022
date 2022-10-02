@@ -1,6 +1,5 @@
 package com.example.recyclerview080820221704;
 
-import androidx.annotation.NonNull;
 
 public enum CategoryEnum {
     RESTAURANT("Nhà hàng"),
@@ -18,7 +17,6 @@ public enum CategoryEnum {
         name = s;
     }
 
-    @NonNull
     public String toString() {
         return name;
     }
